@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url('https://res.cloudinary.com/dgqbatl84/image/upload/v1687674744/static/andrew-neel-xNiJJHl0WP4-unsplash_qlqfgp.jpg');
+        background-size: cover;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 50px;
+        color: white;
+        letter-spacing: 8px;
+        filter: blur(4px);
+        cursor: pointer;
+    }
+
+    h1:hover {
+        filter: blur(0);
+    }
+
+    h1::selection {
+        color: red;
+    }
+
+    h1[contenteditable="true"]:focus {
+        outline: none;
+    }
+</style>
+
+<body>
+    <h1 contenteditable="true">Replace with your name</h1>
+</body>
+
+</html>
